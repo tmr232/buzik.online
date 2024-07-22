@@ -1,0 +1,100 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #595959;
+}
+
+header {
+  background-color: #595959;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  div {
+    width: 1200px;
+    padding: 0%;
+    background-color: #e2e2e2;
+    color: black;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+
+  h1 {
+    font-family: "Matura MT Script Capitals", sans-serif;
+    font-size: 6.5em;
+    /* line-height: 100px; */
+    margin: 20px;
+  }
+}
+
+.sub-title {
+  font-size: 2em;
+  margin-top: 10px;
+  font-family: "Matura MT Script Capitals", sans-serif;
+  /* color: #f0f0f0; */
+}
+
+main {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  padding: 40px;
+}
+
+.left-column {
+  background-color: #f1f1f1;
+  margin-right: 10px;
+  h2 {
+    margin-top: 0;
+  }
+  line-height: 125%;
+  text-align: justify;
+}
+
+.right-column {
+  background-color: #e2e2e2;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.download-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: hsl(207, 0%, 49%);
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  border: #222 solid 1px;
+}
+
+.download-link:hover {
+  background-color: hsl(207, 0%, 45%);
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .right-column {
+    margin-left: 0px;
+  }
+
+  .left-column {
+    margin-right: 0px;
+  }
+}
